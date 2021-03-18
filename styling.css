@@ -1,13 +1,10 @@
-@keyframes title{
-    from{
-        color: linear-gradient(red, yellow, green);
-    }
-    to{
-        color: linear-gradient(green, yellow, red);
-    }
+@keyframes titleanim{
+    from{font-size: 24px;}
+    to{font-size: 20px;}
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61803.jpg?size=626&ext=jpg");
 }
 
 .navbar {
@@ -41,13 +38,13 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:lightblue;
+  background-color:lightsalmon;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: linen;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -63,17 +60,19 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: lightslategrey;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-h1{
+#title{
     text-align: center;
     font-style: italic;
-    animation-name: title;
-    animation-duration: 2s;
+    animation-name: titleanim;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: alternate;
+    background-color: lightcoral;
 }
