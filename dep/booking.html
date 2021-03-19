@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>BOOKING</title>
+        <style>
+            body{
+                background-image: url("https://wallpaperaccess.com/full/1282794.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            h1{
+                text-align: center;
+                font-size: 50px;
+                color: rgb(55, 130, 243);
+                text-shadow: 2px 2px red;
+            }
+            div{
+                margin-left: 550px;
+            }
+            #desc{
+                height: 70px;
+                width: 300px;
+            }
+            *{
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WELCOME TO INFINITE HOSPITAL</h1>
+        <div>
+            <form action="booking_confirm.html">
+                <label for="fname" >First Name*:</label><br>
+                <input type="text" id="fname" name="fname" required autofocus ><br>
+                <label for="lname" >Last Name*:</label><br>
+                <input type="text" id="lname" name="lname" required><br><br>
+                
+                <label>Gender*:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+
+                <label for="contact" >Contact Number*:</label><br>
+                <input type="number" id="number" name="contact" required><br><br>
+  
+                <label for="dob" >Date of Birth*:</label><br>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="email" >Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="doa" >Appointment Date & Time*:</label><br>
+                <input type="datetime-local" id="doa" name="doa"><br><br>
+
+                <label for="dept" >Booking Department*:</label><br>
+                <input list="dept" type="text" required>
+                <datalist id="dept">
+                    <option value="Anatomy"></option>
+                    <option value="Cardiology"></option>
+                    <option value="Neurology"></option>
+                    <option value="Endocrinology"></option>
+                    <option value="Pediatric"></option>
+                    <option value="Heamotology"></option>
+                    <option value="Gynaecology"></option>
+                    <option value="Orthopaedic"></option>
+                    <option value="Urology"></option>
+                    <option value="Ophthalmology"></option>
+                    <option value="Others"></option>
+                </datalist><br><br>
+
+                <label for="desc" >Description about the disease:</label><br>
+                <input type="text" id="desc" name="desc" >
+
+
+
+                <br><br>
+                <input type="submit" value="Submit">
+              </form> 
+        </div>
+    </body>
+    </html>

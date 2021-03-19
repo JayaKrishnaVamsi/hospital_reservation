@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CARDIOLOGY</title>
+        <link rel="stylesheet" href="dept.css">
+        <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+}
+img {vertical-align: middle;height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>INFINITE HOSPITAL</h1>
+        <h2>CARDIOLOGY</h2>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="https://www.fi.edu/sites/default/files/General_EduRes_Heart_MilestonesInCardiology.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://lh3.googleusercontent.com/proxy/NAq5vdnN7joqlXUteUr2W8VmpGjUT_lMf4JJmM4PL9ut-eJaROmFlBooNioptl5Z4EdbhY6VFKQzeRRS0HXk9Ei6tIjdlF3occQUXofH_TLtxwj-rw" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://scopeblog.stanford.edu/wp-content/uploads/2019/01/bright-cardiac-cardiology-433267-1152x578.jpg" style="width:100%">
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <div class="description">
+                <p>Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology. Physicians who specialize in this field of medicine are called cardiologists, a specialty of internal medicine. Pediatric cardiologists are pediatricians who specialize in cardiology. Physicians who specialize in cardiac surgery are called cardiothoracic surgeons or cardiac surgeons, a specialty of general surgery.
+Although the cardiovascular system is inextricably linked to blood, cardiology is relatively unconcerned with hematology and its diseases. Some obvious exceptions that affect the function of the heart would be blood tests (electrolyte disturbances, troponins), decreased oxygen carrying capacity (anemia, hypovolemic shock), and coagulopathies.
+All cardiologists study the disorders of the heart, but the study of adult and child heart disorders are through different training pathways. Therefore, an adult cardiologist (often simply called "cardiologist") is inadequately trained to take care of children, and pediatric cardiologists are not trained to take care of adult heart disease. The surgical aspects are not included in cardiology and are in the domain of cardiothoracic surgery. For example, coronary artery bypass surgery (CABG), cardiopulmonary bypass and valve replacement are surgical procedures performed by surgeons, not cardiologists. However, the insertion of stents and pacemakers is performed by cardiologists.</p>
+            </div>
+            
+            <h4>List of specialized doctors</h4>
+            <ul>
+              <li>SweetPea</li>
+              <li>Dr. House</li>
+              <li>Dr. Jhonny</li>
+              <li>Dr. Debjyoti</li>
+              <li>Dr. Who</li>
+            </ul>
+            <h5>To go to home page <a href="frontpage.html">Click Here</a></h5>
+
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+    </body>
+</html>

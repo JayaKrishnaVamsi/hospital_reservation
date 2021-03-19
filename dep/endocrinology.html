@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ENDOCRINOLOGY</title>
+        <link rel="stylesheet" href="dept.css">
+        <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+}
+img {vertical-align: middle;height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>INFINITE HOSPITAL</h1>
+        <h2>ENDOCRINOLOGY</h2>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="https://www.thumbayuniversityhospital.com/wp-content/uploads/2019/04/uytutyutu.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="http://amarhospital.com/wp-content/uploads/2020/06/endocrinology.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://media.istockphoto.com/photos/thyroid-gland-inside-human-body-glowing-red-3d-illustration-picture-id689278840?k=6&m=689278840&s=612x612&w=0&h=nW35n268sd4-KeDSbF_9yfnTAB6zmWz5mmVG6C1IQds=" style="width:100%">
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <div class="description">
+                <p>Endocrinology is a branch of biology and medicine dealing with the endocrine system, its diseases, and its specific secretions known as hormones. It is also concerned with the integration of developmental events proliferation, growth, and differentiation, and the psychological or behavioral activities of metabolism, growth and development, tissue function, sleep, digestion, respiration, excretion, mood, stress, lactation, movement, reproduction, and sensory perception caused by hormones. Specializations include behavioral endocrinology and comparative endocrinology.
+                    The endocrine system consists of several glands, all in different parts of the body, that secrete hormones directly into the blood rather than into a duct system. Therefore, endocrine glands are regarded as ductless glands. Hormones have many different functions and modes of action; one hormone may have several effects on different target organs, and, conversely, one target organ may be affected by more than one hormone.Endocrinology is the study of the endocrine system in the human body. This is a system of glands which secrete hormones. Hormones are chemicals that affect the actions of different organ systems in the body. Examples include thyroid hormone, growth hormone, and insulin. The endocrine system involves a number of feedback mechanisms, so that often one hormone will control the action or release of another secondary hormone. If there is too much of the secondary hormone, it may provide negative feedback to the primary hormone, maintaining homeostasis.</p>
+            </div>
+            
+            <h4>List of specialized doctors</h4>
+            <ul>
+              <li>Dr. Gitansh</li>
+              <li>Dr. Saumya</li>
+              <li>Dr. Katniss</li>
+              <li>Dr. Terror</li>
+              <li>Dr. MM.</li>
+            </ul>
+            <h5>To go to home page <a href="frontpage.html">Click Here</a></h5>
+
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+    </body>
+</html>

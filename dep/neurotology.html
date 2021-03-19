@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEUROTOLOGY</title>
+        <link rel="stylesheet" href="dept.css">
+        <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+}
+img {vertical-align: middle;height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>INFINITE HOSPITAL</h1>
+        <h2>NEUROTOLOGY</h2>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="https://marvel-b1-cdn.bc0a.com/f00000000083806/www.ceenta.com/storage/wysiwyg/neurotologyweb.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://static.wixstatic.com/media/63bd83_a2c74c1b03924196af94fdaf07197352~mv2.jpg/v1/fill/w_448,h_371,al_c,lg_1,q_80/63bd83_a2c74c1b03924196af94fdaf07197352~mv2.webp" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://i.pinimg.com/originals/e8/3c/38/e83c38ee45cc7aa02878a7ffe12ed0da.jpg" style="width:100%">
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <div class="description">
+                <p>Neurotology or neuro-otology is a subspecialty of otolaryngology—head and neck surgery, also known as ENT (ear, nose, and throat) medicine.[1] Neuro-otology is closely related to otology, clinical neurology and neurosurgery.
+                  Otology may refer to ENT physicians who normal and pathological anatomy and physiology of the ear (hearing and vestibular sensory systems and related structures and functions), and who treat diseases of the ear with medicine or surgery.In some instances, otology and neurotology are considered together—as so closely related that a clear demarcation between the subspecialties might not exist. For example, the University of Maryland Medical Center uses the term, "otologist/neurotologist".
+                  Otologists and neurotologists have specialized in otolaryngology and then further specialized in pathological conditions of the ear and related structures. Many general otolaryngologists are trained in otology or middle ear surgery, performing surgery such as a tympanoplasty, or a reconstruction of the eardrum, when a hole remains from a prior ear tube or infection. Otologic surgery includes treatment of conductive hearing loss by reconstructing the hearing bones, or ossicles, as a result of infection, or by replacing the stapes bone with a stapedectomy for otosclerosis. Otology and neurotology encompass more complex surgery of the inner ear not typically performed by general otolaryngologists, such as removal of complex cholesteatoma, labyrinthectomy, surgery of the endolymphatic sac for meniere's disease and cochlear implant surgery.</p>
+            </div>
+            
+            <h4>List of specialized doctors</h4>
+            <ul>
+              <li>Dr. Dolly</li>
+              <li>Dr. Simmi</li>
+              <li>Dr. Divya </li>
+              <li>Dr. Harshit</li>
+              <li>Dr. Sanjana</li>
+            </ul>
+            <h5>To go to home page <a href="frontpage.html">Click Here</a></h5>
+
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+    </body>
+</html>

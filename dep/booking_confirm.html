@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOOKING CONFIRMED</title>
+        <style>
+            body{
+                background-image: url("https://wallpapercave.com/wp/wp1848587.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            h1{
+                text-align: center;
+                font-size: 90px;
+                color: rgb(255, 227, 100);
+                text-shadow: 2px 2px red;
+                margin-top: 70px;
+            }
+            div{
+                text-align: center;
+                margin-top: 200px;
+                background-color: black;
+                color: white;
+                padding: 10px;
+                margin-left: 130px;
+                margin-right: 130px;
+            }
+            #desc{
+                height: 70px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>THANKS FOR BOOKING</h1>
+        <div>
+            <h3>To get your Appointment Id </h3>
+            <button onclick="myFunction()">Click Here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = Math.floor((Math.random() * 9999) + 1);
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+            <h3>Please come 1 hour before your appointment time</h3>
+            <h2>Thank you, Have a nice day</h2>
+        </div>
+    </body>
+    </html>

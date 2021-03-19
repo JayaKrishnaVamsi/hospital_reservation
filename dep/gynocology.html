@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Depertment</title>
+        <link rel="stylesheet" href="dept.css">
+
+<style>
+ * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+}
+img {vertical-align: middle;height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+</style>
+</head>
+<body>
+
+
+
+</head>
+<body>
+    <h1>INFINITE HOSPITAL</h1>
+    <h2>GYNECOLOGY</h2>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="https://www.careergirls.org/wp-content/uploads/2018/05/obgyn_1920x1080.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://jamanetwork.com/imagelibrary/CollectionFeaturedImages/JamaNetwork/44013_obstetrics-and-gynecology.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://www.amitahealth.org/assets/images/medgroup/obstetrics_gynecology_p3.jpg" style="width:100%">
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <div class="description">
+        <p>Gynaecology or gynecology (see spelling differences) is the medical practice dealing with the health of the female reproductive system. Almost all modern gynaecologists are also obstetricians (see obstetrics and gynaecology). In many areas, the specialities of gynaecology and obstetrics overlap.
+
+            The term means "the science of women". [1] Its counterpart is andrology, which deals with medical issues specific to the male reproductive system.The Kahun Gynaecological Papyrus, dated to about 1800 BC, deals with women's health —gynaecological diseases, fertility, pregnancy, contraception, etc. The text is divided into thirty-four sections, each section dealing with a specific problem and containing diagnosis and treatment; no prognosis is suggested. Treatments are non surgical, comprising applying medicines to the affected body part or swallowing them. The womb is at times seen as the source of complaints manifesting themselves in other body parts.[2]
+            
+            Texts of Ayurveda, an Indian traditional medical system, also provides details about concepts and techniques related to Gynaecology.[3][4]
+            
+            The Hippocratic Corpus contains several gynaecological treatises dating to the 5th/4th centuries BC. Aristotle is another strong source for medical texts from the 4th century BC with his descriptions of biology primarily found in History of Animals, Parts of Animals, Generation of Animals. [5] The gynaecological treatise Gynaikeia by Soranus of Ephesus (1st/2nd century AD) is extant (together with a 6th-century Latin paraphrase by Muscio, a physician of the same school). He was the chief representative of the school of physicians known as the "Methodists".
+            
+            J. Marion Sims is widely considered the father of modern gynaecology.[6] Now criticized for his practices, Sims developed some of his techniques by operating on slaves, many of whom were not given anaesthesia.[7][8] Sims performed surgeries on 12 enslaved women in his homemade backyard hospital for four years. While performing these surgeries he invited men physicians and students to watch invasive and painful procedures while the women were exposed. On one of the women, named Anarcha, he performed 30 surgeries without anesthesia.[9] Due to having so many enslaved women, he would rotate from one to another, continuously trying to perfect the repair of their fistulas. Physicians and students lost interest in assisting Sims over the course of his backyard practice, and he recruited other enslaved women, who were healing from their own surgeries, to assist him. In 1855 Sims went on to found the Woman's Hospital in New York, the first hospital specifically for female disorders.[10]</p>
+    </div>
+<h4>List Of Specialist Doctors</h4>
+<ul>
+<li>Alam Khan</li>
+<li>Chayan Sen</li>
+<li>Tamanna Bhatia</li>
+<li>Raja Ganguly</li>
+<li>Bhaskar Sen</li>
+</ul>
+<h5>To go to home page <a href="frontpage.html"> Click Here</a></h5>
+</body>

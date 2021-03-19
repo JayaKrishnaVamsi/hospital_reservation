@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Depertment</title>
+        <link rel="stylesheet" href="dept.css">
+<style>
+ * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+}
+img {vertical-align: middle;height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+</style>
+</head>
+<body>
+
+
+
+</head>
+<body>
+    <h1>INFINITE HOSPITAL</h1>
+    <h2>UROLOGY</h2>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="https://bizimages.withfloats.com/actual/5d36aa1f44ad5800015d7761.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://productimages.withfloats.com/actual/5d316a5d0417f30001a6d8c7.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://images-prod.healthline.com/hlcmsresource/images/faces-of-healthcare/faces-of-healthcare_article_urologist.jpg" style="width:100%">
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <div class="description">
+        <p>Urology (from Greek οὖρον ouron "urine" and -λογία -logia "study of"), also known as genitourinary surgery, is the branch of medicine that focuses on surgical and medical diseases of the male and female urinary-tract system and the male reproductive organs. Organs under the domain of urology include the kidneys, adrenal glands, ureters, urinary bladder, urethra, and the male reproductive organs (testes, epididymis, vas deferens, seminal vesicles, prostate, and penis).
+
+            The urinary and reproductive tracts are closely linked, and disorders of one often affect the other. Thus a major spectrum of the conditions managed in urology exists under the domain of genitourinary disorders. Urology combines the management of medical (i.e., non-surgical) conditions, such as urinary-tract infections and benign prostatic hyperplasia, with the management of surgical conditions such as bladder or prostate cancer, kidney stones, congenital abnormalities, traumatic injury, and stress incontinence.[1]
+            
+            Urological techniques include minimally invasive robotic and laparoscopic surgery, laser-assisted surgeries, and other scope-guided procedures. Urologists receive training in open and minimally invasive surgical techniques, employing real-time ultrasound guidance, fiber-optic endoscopic equipment, and various lasers in the treatment of multiple benign and malignant conditions.[2][3] Urology is closely related to (and urologists often collaborate with the practitioners of) oncology, nephrology, gynaecology, andrology, pediatric surgery, colorectal surgery, gastroenterology, and endocrinology.
+            
+            Urology is one of the most competitive and highly sought surgical specialties for physicians, with new urologists comprising less than 1.5% of United States medical-school graduates each year.[4][5]
+            
+            Urologists are physicians which have specialized in the field after completing their general degree in medicine. Upon successful completion of a residency program, many urologists choose to undergo further advanced training in a subspecialty area of expertise through a fellowship lasting an additional 12 to 36 months. Subspecialties may include: urologic surgery, urologic oncology and urologic oncological surgery, endourology and endourologic surgery, urogynecology and urogynecologic surgery, reconstructive urologic surgery (a form of reconstructive surgery), minimally-invasive urologic surgery, pediatric urology and pediatric urologic surgery (including adolescent urology, the treatment of premature or delayed puberty, and the treatment of congenital urological syndromes, malformations, and deformations), transplant urology (the field of transplant medicine and surgery concerned with transplantation of organs such as the kidneys, bladder tissue, ureters, and, recently, penises), voiding dysfunction, paruresis, neurourology, and androurology and sexual medicine. Additionally, some urologists supplement their fellowships with a master's degree (2–3 years) or with a Ph.D. (4–6 years) in related topics to prepare them for academic as well as focused clinical employment.</p>
+    </div>
+<h4>List Of Specialist Doctors</h4>
+<ul>
+<li>Suresh Sharma</li>
+<li>Jasprit Singh</li>
+<li>Tathagata Patra</li>
+<li>Hari Das</li>
+<li>Dolly Sen</li>
+</ul>
+
+</body>
