@@ -1,0 +1,146 @@
+@keyframes titleanim{
+    from{font-size: 24px;}
+    to{font-size: 20px;}
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61803.jpg?size=626&ext=jpg");
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:lightsalmon;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: linen;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: lightslategrey;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#t1{
+    padding: 8px 8px 12px 8px;
+    text-align: center;
+    font-style: italic;
+    font-size: larger;
+    background-color: lightcoral;
+    margin-top: 20px;
+    height: 70px;
+}
+
+.navigation {
+    width: 300px;
+  }
+  
+.mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.mainmenu a {
+    display: block;
+    background-color: #CCC;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+  }
+  
+.mainmenu a:hover {
+      background-color: #C5C5C5;
+  }
+  
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+  }
+  
+.submenu a {
+    background-color: #999;
+  }
+.submenu a:hover {
+    background-color: #666;
+  }
+  
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+  }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+  }
+#col1{
+    border: 1px solid darkblue;
+    padding: 10px 10px 10px 10px;
+    background-color: darkcyan;
+    margin: 20px 900px 0px 15px;
+    width: 97%;
+    float: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#col2{
+    float: right;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+#container{
+    margin: auto;
+}
+

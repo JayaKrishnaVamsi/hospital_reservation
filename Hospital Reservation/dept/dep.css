@@ -1,0 +1,42 @@
+h1{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+h2{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+.description{
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-image: url(https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg);
+padding: 10px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+margin: 10px;
+}
+h4{
+    font-size: 20px;
+    margin-left: 20px;
+}
+[class="b3"]:hover{
+    background-color:grey;
+    border: 2px slategrey groove;
+}
+[class^="b"]{
+    padding: 10px 10px 10px 10px;
+
+    float: right;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+  }

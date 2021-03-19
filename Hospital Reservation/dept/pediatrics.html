@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PEDIATRICS</title>
+        <link rel="stylesheet" href="dep.css">
+           <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+}
+img {vertical-align: middle;height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+      <button class="b3" onclick="document.location='../frontpage.html'">HOME</button>
+        <h1>INFINITE HOSPITAL</h1>
+        <h2>PEDIATRICS</h2>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="https://www.myhspediatrics.com/wp-content/uploads/2020/01/Holly-Springs_Choosing-a-Pediatrician-1024x536.jpeg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://www.vpshealth.com/images/Pediatrics.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://www.ksbhospital.com/wordpress2017/wp-content/uploads/2018/01/Peds_767x431_acf_cropped-767x431.jpeg" style="width:100%">
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <div class="description">
+                <p>Pediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents. The American Academy of Pediatrics recommends people be under pediatric care through the age of 21 though usually only minors are required to be under pediatric care. In the United Kingdom, pediatrics covers patients until age 18. Worldwide age limits of pediatrics have been trending up year over year. A medical doctor who specializes in this area is known as a pediatrician, or paediatrician. The word pediatrics and its cognates mean "healer of children"; they derive from two Greek words: παῖς (pais "child") and ἰατρός (iatros "doctor, healer"). Pediatricians work in hospitals and children's hospitals particularly those working in its subspecialties (e.g. neonatology), and as outpatient primary care physicians.
+                    Some of the oldest traces of pediatrics can be discovered in Ancient India where children's doctors were called kumara bhrtya.Sushruta Samhita an ayurvedic text, composed during the sixth century BC contains the text about pediatrics.Another ayurvedic text from this period is Kashyapa Samhita.</p>
+            </div>
+            
+            <h4>List of specialized doctors</h4>
+            <ul>
+                <li>Dr. Adam</li>
+                <li>Dr. Jill</li>
+                <li>Dr. Jekyll</li>
+                <li>Dr. Hyde</li>
+                <li>Dr. Hannibal Lecter</li>
+            </ul>
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <button class="b3" onclick="document.location='../frontpage.html'">HOME</button>
+            <div class="footer">
+              <pre> INFINITE HOSPITALS         Ph.no +917894561230          Landline:418889</pre>
+          </div>
+    </body>
+</html>

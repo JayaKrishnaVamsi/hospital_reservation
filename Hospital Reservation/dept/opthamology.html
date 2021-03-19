@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Depertment</title>
+        <link rel="stylesheet" href="dep.css">
+
+<style>
+ * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+}
+img {vertical-align: middle;height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+</style>
+</head>
+<body>
+
+
+
+</head>
+<body>
+  <button class="b3" onclick="document.location='../frontpage.html'">HOME</button>
+    <h1>INFINITE HOSPITAL</h1>
+    <h2>OPHTHALMOLOGY</h2>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="https://www.nicklauschildrens.org/NCH/media/img/hero/ophthalmology_mobile.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://www.pointsdevue.com/sites/default/files/ess71_clinic_20.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://www.fortishealthcare.com/speciality_banner/mobile/Eye-care.jpg" style="width:100%">
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <div class="description">
+        <p>Ophthalmology (/ˌɒfθælˈmɒlədʒi/)[1] is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye.[2] An ophthalmologist is a physician who specializes in ophthalmology.[3] The credentials include a degree in medicine, followed by additional four to five years of residency training in ophthalmology. Residency training programs for ophthalmology may require a one-year internship with training in internal medicine, pediatrics, or general surgery. Additional specialty training (or fellowship) may be sought in a particular aspect of eye pathology.[4] Ophthalmologists are allowed to prescribe medications to treat eye diseases, implement laser therapy, and perform surgery when needed.[5] Ophthalmologists may participate in academic research on the diagnosis and treatment for eye disorders.[6]Eye surgery, also known as ocular surgery, is surgery performed on the eye or its adnexa by an ophthalmologist. The eye is a fragile organ, and requires extreme care before, during, and after a surgical procedure. An eye surgeon is responsible for selecting the appropriate surgical procedure for the patient and for taking the necessary safety precautions.The Greek roots of the word ophthalmology are ὀφθαλμός (ophthalmos, "eye") and -λoγία (-logia, "study, discourse"),[11][12] i.e., "the study of eyes". The discipline applies to all animal eyes, whether human or not, since the practice and procedures are quite similar with respect to disease processes, while differences in anatomy or disease prevalence, whether subtle or substantial, may differentiate the two.</p>
+    </div>
+<h4>List Of Specialist Doctors</h4>
+<ul>
+<li>Simrandeep Singh</li>
+<li>Bhavya Sen</li>
+<li>Sneha Das</li>
+<li>Kuntal Patra</li>
+<li>Hari Sen</li>
+</ul>
+<button class="b3" onclick="document.location='../frontpage.html'">HOME</button>
+<div class="footer">
+  <pre> INFINITE HOSPITALS         Ph.no +917894561230          Landline:418889</pre>
+</div>
+</body>

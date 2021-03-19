@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Depertment</title>
+        <link rel="stylesheet" href="dep.css">
+
+<style>
+ * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+}
+img {vertical-align: middle;height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+</style>
+</head>
+<body>
+
+
+
+</head>
+<body>
+  <button class="b3" onclick="document.location='../frontpage.html'">HOME</button>
+    <h1>INFINITE HOSPITAL</h1>
+    <h2>HEMATOLOGY</h2>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="https://www.biospace.com/getasset/f26478a6-8003-469a-bbf4-05fd4ce4b103/" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://www.windsor.edu/wp-content/uploads/2018/07/Medical-Specialty-1109x675.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://www.medgadget.com/wp-content/uploads/2020/01/Hematology-Market.jpg" style="width:100%">
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <div class="description">
+        <p>Hematology (also spelled haematology in British English) is the branch of medicine concerned with the study of the cause, prognosis, treatment, and prevention of diseases related to blood.It involves treating diseases that affect the production of blood and its components, such as blood cells, hemoglobin, blood proteins, bone marrow, platelets, blood vessels, spleen, and the mechanism of coagulation. Such diseases might include hemophilia, blood clots (thrombus), other bleeding disorders, and blood cancers such as leukemia, multiple myeloma, and lymphoma.The laboratory analysis of blood is frequently performed by a medical technologist or medical laboratory scientist.Physicians specialized in hematology are known as hematologists or haematologists. Their routine work mainly includes the care and treatment of patients with hematological diseases, although some may also work at the hematology laboratory viewing blood films and bone marrow slides under the microscope, interpreting various hematological test results and blood clotting test results. In some institutions, hematologists also manage the hematology laboratory. Physicians who work in hematology laboratories, and most commonly manage them, are pathologists specialized in the diagnosis of hematological diseases, referred to as hematopathologists or haematopathologists. Hematologists and hematopathologists generally work in conjunction to formulate a diagnosis and deliver the most appropriate therapy if needed. Hematology is a distinct subspecialty of internal medicine, separate from but overlapping with the subspecialty of medical oncology. Hematologists may specialize further or have special interests</p>
+    </div>
+<h4>List Of Specialist Doctors</h4>
+<ul>
+<li>Anushka Sharma</li>
+<li>Lalmohon Ganguly</li>
+<li>Neha Kakkar</li>
+<li>Rahul Das</li>
+<li>Kamal Hasan</li>
+</ul>
+<button class="b3" onclick="document.location='../frontpage.html'">HOME</button>
+<div class="footer">
+  <pre> INFINITE HOSPITALS         Ph.no +917894561230          Landline:418889</pre>
+</div>
+</body>
