@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="tpage.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <h2>  Your COVID-19 Vaccine Appointment</h2>
+<p>Because COVID-19 is a new disease with new vaccines, you may have questions about what happens before, during, and after your appointment to get vaccinated.</p>
+<p>These tips will help you know what to expect when you get vaccinated, what information your provider will give you, and resources you can use to monitor your health after you are vaccinated.</p>
+
+<p>Before getting your vaccine, see if COVID-19 vaccination is recommended for you right now.</p>
+<p>Learn more about the different types of COVID-19 vaccines and how they work.</p>
+
+Considerations for taking medication before getting vaccinated:
+<ul>
+<li>For most people, it is not recommended to avoid, discontinue, or delay medications for underlying medical conditions around the time of COVID-19 vaccination.</li>
+<li>Not recommended you take over-the-counter medicine, such as ibuprofen, aspirin, or acetaminophen, before vaccination for the purpose of trying to prevent vaccine-related side effects.</li>
+<li>However, if you take these medications regularly for other reasons, you should keep taking them before you get vaccinated.</li>
+<li>Not recommended to take antihistamines before getting a COVID-19 vaccine to try to prevent allergic reactions.</li>
+<li>If you have questions about medications that you are taking, talk to your doctor or your vaccination provider.</li>
+</ul>
+</div>
+
+
+<div class="mySlides">
+    <h2>At your vaccination appointment</h2>
+    <ul>
+    <li>When you get the vaccine, you and your healthcare worker will both need to wear masks that cover your nose and mouth.</li>
+    <li>Stay 6 feet away from others while inside and in lines.</li>
+    <li>You should receive a vaccination card that tells you what COVID-19 vaccine you received, the date you received it, and where you received it.</li>
+    <li>Keep your vaccination card in case you need it for future use.</li>
+    <li>You should receive a paper or electronic version of a fact sheet that tells you more about the specific COVID-19 vaccine you are being offered.</li>
+    <li>Each authorized COVID-19 vaccine has its own fact sheet that contains information to help you understand the risks and benefits of receiving that specific vaccine.</li>
+    <li>All people who get a COVID-19 vaccine should be monitored on-site.</li>
+    <li>Learn more about COVID-19 vaccines and rare severe allergic reactions.</li> ​
+    <li>Don’t get a COVID-19 vaccine at the same time as other vaccines</li>
+    <li>Have at least 14 days gap before/after getting any other vaccine, after you get your COVID-19 vaccine.</li>
+</ul>
+</div>
+
+<div class="mySlides">
+    <h2>What to expect after getting a COVID-19 vaccine</h2>
+<ul>
+   <li>Learn about common side effects after getting a COVID-19 vaccine and get helpful tips on how to reduce your pain and discomfort.</li> 
+<li>It takes time for your body to build protection after any vaccination.</li>
+<li>You should keep using all the tools available to protect yourself and others until you are fully vaccinated.</li>
+<li>After you are fully vaccinated against COVID-19, you may be able to start doing some things that you had stopped doing because of the pandemic.</li>
+<li>Learn more about what you can do when you have been fully vaccinated.</li>
+</ul>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</html> 
